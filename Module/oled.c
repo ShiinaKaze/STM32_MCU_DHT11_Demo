@@ -2,7 +2,7 @@
 #include "oled_font.h"
 #include "delay.h"
 
-// OLED I2C Software Interface, if you want to use your Software I2C, you can change it.
+// OLED I2C Software Interface, if you want to use your Software I2C, you can modify it.
 #define SW_I2C_Init() SW_I2C_Init()
 #define SW_I2C_Start() SW_I2C_Start()
 #define SW_I2C_Stop() SW_I2C_Stop()
@@ -40,7 +40,7 @@ void Software_I2C_WD_SSD1306(uint8_t Data)
  * @brief  OLED sets cursor position
  * @param  Y: With the upper left corner as the origin, downward direction coordinates, range: 0-7
  * @param  X: With the upper left corner as the origin, the coordinates in the right direction, range 0-127
- * @retval 无
+ * @retval None
  */
 void OLED_SetCursor(uint8_t Y, uint8_t X)
 {
@@ -173,7 +173,7 @@ void OLED_ShowSignedNum(uint8_t Line, uint8_t Column, int32_t Number,
  * @param  Column: Column position, range 1-16
  * @param  Number: The number to display， value range：0-0xFFFFFFFF
  * @param  Length: To display the number length, the value ranges from 1 to 8
- * @retval 无
+ * @retval None
  */
 void OLED_ShowHexNum(uint8_t Line, uint8_t Column, uint32_t Number,
 					 uint8_t Length)
@@ -199,7 +199,7 @@ void OLED_ShowHexNum(uint8_t Line, uint8_t Column, uint32_t Number,
  * @param  Column: Column position, range 1-16
  * @param  Number The number to display，value range ：0-1111 1111 1111 1111
  * @param  Length To display the number length, the value ranges from 1 to 16
- * @retval 无
+ * @retval None
  */
 void OLED_ShowBinNum(uint8_t Line, uint8_t Column, uint32_t Number,
 					 uint8_t Length)

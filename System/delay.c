@@ -6,7 +6,7 @@
 /**
  * @brief  Microsecond delay
  * @param  Delay:specifies the delay time length, in microseconds.
- * @retval 无
+ * @retval None
  */
 void Delay_us(uint32_t Delay)
 {
